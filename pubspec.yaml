@@ -23,6 +23,8 @@ flutter:
 
   assets:
     - assets/photocv.jpg
+    - assets/flutter_logo.png
+    - assets/xamarin_logo.png
 
   fonts:
     - family: Lato
