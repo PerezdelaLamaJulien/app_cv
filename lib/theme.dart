@@ -1,3 +1,4 @@
+import 'package:app_cv/views/resume.dart';
 import 'package:flutter/material.dart';
 
 ThemeData _lightTheme = ThemeData(
@@ -39,18 +40,16 @@ class _DarkLightThemeState extends State<DarkLightTheme> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: _light ? _lightTheme : _darkTheme,
-      title: 'App CV',
-      darkTheme: _darkTheme,
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('Curriculum Vitae'),
-          actions: [
-            IconButton(icon: iconTheme, onPressed: () => _changeTheme()),
-          ],
-        ),
-        body: Center(child: Text("Hello World")),
-      ),
-    );
+        theme: _light ? _lightTheme : _darkTheme,
+        title: 'App CV',
+        darkTheme: _darkTheme,
+        home: Scaffold(
+            appBar: AppBar(
+              title: Text('Curriculum Vitae'),
+              actions: [
+                IconButton(icon: iconTheme, onPressed: () => _changeTheme()),
+              ],
+            ),
+            body: Resume()));
   }
 }
