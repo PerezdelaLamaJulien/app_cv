@@ -39,27 +39,18 @@ class _DarkLightThemeState extends State<DarkLightTheme> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        theme: _light ? _lightTheme : _darkTheme,
-        title: 'App CV',
-        darkTheme: _darkTheme,
-        home: Scaffold(
-          appBar: AppBar(
-            title: Text('Curriculum Vitae'),
-            actions: [
-              IconButton(icon: iconTheme, onPressed: () => _changeTheme()),
-            ],
-          ),
-          body: Center(
-            child: Column(
-              children: <Widget>[
-                TextField(
-                  decoration: InputDecoration(labelText: "Enter Name"),
-                ),
-                RaisedButton(child: Text("Click Me"), onPressed: () {}),
-                Switch(value: _light, onChanged: (state) {}),
-              ],
-            ),
-          ),
-        ));
+      theme: _light ? _lightTheme : _darkTheme,
+      title: 'App CV',
+      darkTheme: _darkTheme,
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Curriculum Vitae'),
+          actions: [
+            IconButton(icon: iconTheme, onPressed: () => _changeTheme()),
+          ],
+        ),
+        body: Center(child: Text("Hello World")),
+      ),
+    );
   }
 }
