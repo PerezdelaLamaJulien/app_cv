@@ -1,7 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Skill extends StatelessWidget {
+class Skill {
   Skill(this.text, {this.icon, this.image});
+  final String text;
+  final IconData icon;
+  final ImageProvider<Object> image;
+}
+
+class SkillView extends StatelessWidget {
+  SkillView(this.text, {this.icon, this.image});
   final String text;
   final IconData icon;
   final ImageProvider<Object> image;
@@ -9,7 +16,6 @@ class Skill extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.red,
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.center,
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

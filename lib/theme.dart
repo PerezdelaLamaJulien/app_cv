@@ -1,5 +1,3 @@
-import 'package:app_cv/views/resume.dart';
-import 'package:app_cv/views/skill.dart';
 import 'package:flutter/material.dart';
 
 ThemeData _lightTheme = ThemeData(
@@ -51,30 +49,6 @@ class _DarkLightThemeState extends State<DarkLightTheme> {
                 IconButton(icon: iconTheme, onPressed: () => _changeTheme()),
               ],
             ),
-            body: SingleChildScrollView(
-                child: Column(
-              children: <Widget>[
-                Resume(),
-                GridView.count(
-                  primary: false,
-                  padding: const EdgeInsets.all(20),
-                  crossAxisSpacing: 15,
-                  mainAxisSpacing: 15,
-                  crossAxisCount: 3,
-                  shrinkWrap: true,
-                  children: <Widget>[
-                    Skill("Test1", icon: Icons.sports_bar),
-                    Skill("Test2", icon: Icons.wb_sunny),
-                    Skill(
-                      "Test3",
-                      image: AssetImage("assets/flutter_logo.png"),
-                    ),
-                    Skill("Test4", icon: Icons.sports_bar),
-                    Skill("Test4",
-                        image: AssetImage("assets/xamarin_logo.png")),
-                  ],
-                )
-              ],
-            ))));
+            body: SingleChildScrollView(child: Text("Work in Progress"))));
   }
 }
