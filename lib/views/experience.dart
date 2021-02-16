@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Vue pour les Expériences profesionnelles et formations
 class Experience {
   Experience({this.title, this.company, this.time});
   final String title;

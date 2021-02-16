@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Vue pour les compétences
 class Skill {
   Skill(this.text, {this.icon, this.image});
   final String text;

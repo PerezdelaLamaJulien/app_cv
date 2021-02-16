@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+//Vue pour la description
 class Resume extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
